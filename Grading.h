@@ -50,4 +50,3 @@ public:
 	//ouput final grade
 	void output_grade();
 };
-

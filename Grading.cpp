@@ -14,14 +14,14 @@ Grading::Grading() {
 
 void Grading::determine_storage(unsigned int input_grade, std::string assignment_type) {
 	std::string temp_string = "";
-	
+
 	//coverts string to all upper case letters
 	for (int i = 0; i < assignment_type.length(); i++) {
 		temp_string += std::toupper(assignment_type[i]);
 	}
-	
+
 	this->task_type = temp_string;
-	
+
 	//if the task is an assignment, store grade into assignment vector
 	if (task_type == "ASSIGNMENT") {
 		assignments.push_back(input_grade);
@@ -50,6 +50,7 @@ void Grading::determine_storage(unsigned int input_grade, std::string assignment
 		this->midterm_project_taken = true;
 	}
 
+	//The task was not a valid task for this class 
 	else {
 		std::cout << "That is not a valid task type";
 	}
@@ -59,17 +60,20 @@ void Grading::calculate() {
 	double curr_points = 0;
 	double total_points = 0;
 
+	//loops through the all assignments inputed and adds to current points
 	for (auto& elem : assignments) {
 		curr_points += elem;
 	}
 
+	//loops through the all labs inputed and adds 
 	for (auto& elem : labs) {
 		curr_points += elem;
 	}
 
+	//adds the exam, fina poject, and midterm project grade
 	curr_points += exam + final_project + midterm_project;
 
-	//calculating the current amount of total points 
+	//calculating the current amount of total points for the amount task taken
 	if (assignments.size() != 0) {
 		total_points += 100 * assignments.size();
 	}
@@ -91,6 +95,7 @@ void Grading::calculate() {
 	this->num_grade = (curr_points / total_points) * 100;
 }
 
+//Outputs the letter grade depedning on the numercial grade
 void Grading::output_grade() {
 	if (num_grade >= 94) {
 		this->letter_grade = "A";
