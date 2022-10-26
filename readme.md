@@ -4,19 +4,19 @@ MEC Project, Aaron, David, Alex
 Summary:
   This program works to give the current grade of a students grades so far in the semester. The github address includes the entire compiled programmed across 3 files (main.cpp, Grading.cpp, Grading.h). As well as mock datasets (grades.txt) that store the grade values.  Aaron programmed the grading classes and did the video, Alex programmed the read/write files and also wrote part of the read.me, David also wrote the pseucode and did part of the readme.md. 
   
-Pseudocode:
- Read in filename
- Read in task type
- If assignment is input
-     write command line inputs to file
- Create Grade object
- Read file to grade
- while there are lines left in file:
-     insert into Grade object as a double
- calculate grade
-      add up all current points
-      divide by total points
- output grade
+Pseudocode:<br/>
+ Read in filename<br/>
+ Read in task type<br/>
+ If assignment is input<br/>
+ &nbsp;&nbsp;&nbsp;    write command line inputs to file<br/>
+ Create Grade object<br/>
+ Read file to grade<br/>
+ while there are lines left in file:<br/>
+ &nbsp;&nbsp;&nbsp;    insert into Grade object as a double<br/>
+ calculate grade<br/>
+ &nbsp;&nbsp;&nbsp;     add up all current points<br/>
+ &nbsp;&nbsp;&nbsp;     divide by total points<br/>
+ output grade<br/>
  
 
 Features:
