@@ -5,6 +5,19 @@ Summary:
   This program works to give the current grade of a students grades so far in the semester. The github address includes the entire compiled programmed across 3 files (main.cpp, Grading.cpp, Grading.h). As well as mock datasets (grades.txt) that store the grade values.  Aaron programmed the grading classes and did the video, Alex programmed the read/write files and also wrote part of the read.me, David also wrote the pseucode and did part of the readme.md. 
   
 Pseudocode:
+ Read in filename
+ Read in task type
+ If assignment is input
+     write command line inputs to file
+ Create Grade object
+ Read file to grade
+ while there are lines left in file:
+     insert into Grade object as a double
+ calculate grade
+      add up all current points
+      divide by total points
+ output grade
+ 
 
 Features:
   The input include file directory, string file name, int grade, string task. The output will always return the current grade for a student given the input. If no grade is inputted for a task in the .txt file, an output will still be calculated that still outputs the current grade. This development was important to us becuase we wanted to be able to make a prgams that would successuflly ouput the current grade and at the same time would be successful even in the case that there is not a grade for a certain task. This way the desriable outcome will still be given even without all the possible grade types filled.
