@@ -2,7 +2,12 @@
 MEC Project, Aaron, David, Alex
 
 Summary:
-  This program works to give the current grade of a students grades so far in the semester. The github address includes the entire compiled programmed across 3 files (main.cpp, Grading.cpp, Grading.h). As well as mock datasets (grades.txt) that store the grade values.  Aaron programmed the grading classes and did the video, Alex programmed the read/write files and also wrote part of the read.me, David also wrote the pseucode and did part of the readme.md. 
+  This program works to give the current grade of a student's grades so far in the semester. The github address includes the entire compiled programmed across 3 files (main.cpp, Grading.cpp, Grading.h). As well as mock datasets (grades.txt) that store the grade values and task types.
+
+Group Contributions:
+Aaron wrote the calculate(), determine_storage() and output_grade() functions in Grading.cpp. 
+Alex programmed the read/write files and also wrote part of the read.me.
+David designed our plan about how to create the gradebook and it features. Was also responsible for writing the main.cpp. He also wrote the psuedocode and did part of the readme.md. 
   
 Pseudocode:<br/>
  Read in filename<br/>
