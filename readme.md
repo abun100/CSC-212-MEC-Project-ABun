@@ -33,6 +33,9 @@ David designed our plan about how to create the gradebook and it features. Was a
 <br/>
 
 ## Input/Compiling:
+The input is put in through the command line and its arguments are the file directory, string file name, int grade, string task.
+  Program will compile with `g++ main.cpp Grading.cpp -o prog`. This will allows the for the rest of the prorgram to continue any outputting. <br/>
+  <br/>
 If a grade needs to be inputed
   ```
   file directory - location of the program/files 
@@ -55,8 +58,8 @@ If you wish to just check your grade status, do not include the grade and task i
  exam (0-100)
  ```
   Grade values are with respect to their categorical values. Meaning not every task is out of 100. 
-  <br/>
-  <br/>
-  
-  The input is put in through the command line and its arguments are the file directory, string file name, int grade, string task.
-  Program will compile with `g++ main.cpp Grading.cpp -o prog`. This will allows the for the rest of the prorgram to continue any outputting. 
+ ## Output
+```
+Your letter grade is: A-
+Your numerical grade is: 92.5373
+```
