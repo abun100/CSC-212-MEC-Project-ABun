@@ -19,7 +19,7 @@ void Grading::determine_storage(unsigned int input_grade, std::string assignment
 	for (int i = 0; i < assignment_type.length(); i++) {
 		temp_string += std::toupper(assignment_type[i]);
 	}
-
+	
 	this->task_type = temp_string;
 
 	//if the task is an assignment, store grade into assignment vector
@@ -52,12 +52,14 @@ void Grading::determine_storage(unsigned int input_grade, std::string assignment
 
 	//The task was not a valid task for this class 
 	else {
-		std::cout << "That is not a valid task type";
+		std::cout << "That is not a valid task type" << std::endl;
 	}
 }
 
 void Grading::calculate() {
+	//current students points for every assignment turned in
 	double curr_points = 0;
+	//total points is the total amount of points possible for each task
 	double total_points = 0;
 
 	//loops through the all assignments inputed and adds to current points
@@ -73,7 +75,8 @@ void Grading::calculate() {
 	//adds the exam, fina poject, and midterm project grade
 	curr_points += exam + final_project + midterm_project;
 
-	//calculating the current amount of total points for the amount task taken
+	//calculating the current amount of total points for the amount of task taken
+	//if the task was not passed in, it will not count towards final grade
 	if (assignments.size() != 0) {
 		total_points += 100 * assignments.size();
 	}

@@ -38,15 +38,16 @@ private:
 	double num_grade;
 
 public:
-	//Deafualt Constructor - assigns input grade and assignment type
+	//Deafualt Constructor - assigns default values for each task type
 	Grading();
 
 	//determine where the value is being stored based on task
 	void determine_storage(unsigned int i_grade, std::string assignment_type);
 
-	//calulates categorical grades
+	//calulates the numerical grade
 	void calculate();
 
 	//ouput final grade
 	void output_grade();
 };
+

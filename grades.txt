@@ -2,5 +2,11 @@
 5 lab
 5 lab
 5 lab
-325 Final_Project
-25 midterm_project
+90 assignment
+100 assignment
+30 midterm_project
+325 final_project
+90 exam
+95 assignment
+
+90 assignment
